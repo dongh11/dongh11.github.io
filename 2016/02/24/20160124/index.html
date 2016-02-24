@@ -20,7 +20,7 @@
 
 
 
-  <meta name="keywords" content="routine," />
+  <meta name="keywords" content="diary," />
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-  <title> 20150614 // Making Progress Every Day </title>
+  <title> 20160124 // Making Progress Every Day </title>
 </head>
 
 <body>
@@ -115,7 +115,7 @@
           
           
             
-              20150614
+              20160124
             
           
         </h1>
@@ -123,7 +123,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-06-14
+          发表于 2016-02-24
         </span>
 
         
@@ -140,14 +140,29 @@
       
 
       
-        <p>最近在看Computational Statistics</p>
+        <h2 id="R_和_Ruby_的数据分析之旅">R 和 Ruby 的数据分析之旅</h2><h4 id="R_Part">R Part</h4><p>关于R的data frame：之前用data frame主要是简单机械，虽然理解其中的逻辑，但是往往代码会比较繁复，可读性差。</p>
 <ul>
-<li>上午看了一些，中午吃饭、睡了一下午</li>
-<li>晚上洗完澡之后看了《花宵道中》，很震撼，也觉得自己很幸运</li>
-<li>然后看漫画数据库</li>
+<li>多用<strong>with() 函数</strong>：dataframe$x[dataframe$x &gt; dataframe$y] 等价于 with(data frame, x[x&gt;y])</li>
+<li>合并数据框用merge，by=‘keyword’ 指定关键词来合并</li>
 </ul>
-<hr>
-<p>毕业季有很多东西要卖，所以我打算把能快点看的书都快点看完然后卖掉，比如欧姆社的一套书。现在在看欧姆社的漫画数据库，回头床头那些书我也要一一看完。</p>
+<p>关于ggplot2的语法：<br>每个图层包括如下五个组成部分</p>
+<ul>
+<li>数据</li>
+<li>审美映射（aes）</li>
+<li>统计变换（stat）</li>
+<li>几何对象（geom） 即所要创建的图表的类型</li>
+<li>位置调节：对图层内的元素位置等进行微调，例如设置填充属性，防止图形重合进行的移动，将柱状图堆叠起来等。</li>
+</ul>
+<p>layer()函数有很多参数，就都对应于上述的语法要素：<br>layer(geom, eom_params, stat, stat_params, data, mapping , position)<br>大多数情况下，为了方便我们可以使用快捷方式，即直接以geom 或stat 开头，因为任何几何对象都有一个默认的统计变换，任何统计变换都有一个默认的几何对象。</p>
+<blockquote>
+<p>p &lt;- ggplot()<br>p &lt;- p+ geom_point()</p>
+</blockquote>
+<p>geom_point 就说明了geom=point，然后stat 是默认的，位置调节没有，只需要再给定数据和aes就可以完成一个图层的plot了。</p>
+<p>统计变换stat对数据进行操作，生成另一个数据集，并用新的数据及来绘图。<br>比如stat_bin 就会生成包含各区段观测样本数和密度值的数据集，进而再将这个数据集用于绘图。而且用了stat_bin这样的统计变换，就会默认采用直方图(geom_histogram)这种几何对象。</p>
+<p>position=‘jitter’ 是对图像进行调节，即若某个位置已经被另一个数据点占据，则所要画的点微微移动到附近的位置，以免重叠。</p>
+<h4 id="Practice">Practice</h4><p>Monte Carlo Simulation：模拟那些需要重复使用随机抽样的物理和数学系统。<br>模拟过程经常是迭代的，因为我们需要对模型进行改进，使其更好地表示系统。</p>
+<p>———</p>
+<h2 id="关于Ruby">关于Ruby</h2><p>Ruby 支持五种类型的变量。<br>一般小写字母、下划线开头：变量（Variable）。<br>$开头：全局变量（Global variable）。<br>@开头：实例变量（Instance variable）。<br>@@开头：类变量（Class variable）类变量被共享在整个继承链中，且必须初始化后才能在方法定义中使用。<br>大写字母开头：常数（Constant）。</p>
 
       
     </div>
@@ -156,7 +171,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/routine/"> #routine </a>
+            <a href="/tags/diary/"> #diary </a>
           
         </div>
       
@@ -165,13 +180,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/06/15/20150615/">20150615</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/06/12/20150612/">20150612</a>
+              <a href="/2016/02/24/20160123/">20160123</a>
             
           </div>
         </div>
@@ -269,7 +282,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#R_和_Ruby_的数据分析之旅"><span class="nav-number">1.</span> <span class="nav-text">R 和 Ruby 的数据分析之旅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#R_Part"><span class="nav-number">1.0.1.</span> <span class="nav-text">R Part</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Practice"><span class="nav-number">1.0.2.</span> <span class="nav-text">Practice</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于Ruby"><span class="nav-number">2.</span> <span class="nav-text">关于Ruby</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
