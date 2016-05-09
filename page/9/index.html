@@ -117,6 +117,161 @@
           
           
             
+              <a class="post-title-link" href="/2016/02/21/20160219/">
+                20160219
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-21
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li>Boosting 25 years by Zhihua Zhou(slides)<ul>
+<li>training instances that are wrongly predicted by Learner1 will play more important roles in the training of Learner2</li>
+<li>Why AdaBoost high impact? simple yet effective, generates the Boosting Family of algorithms, and there are sound theoretical results</li>
+<li>AdaBoost often does not overfit in real practice because of margin</li>
+</ul>
+</li>
+<li>Don’t try for the triple 20 — where to aim if yo are bad at darts （Ryan Tibshirani果然是名门之后，老爸Rob Tibshirani也就是lasso在统计领域的推广者之一在大S统计系任教，他就在大S统计系读的博士，玩个掷飞镖都能玩出一篇RSS来，这篇2011年发表的文章叫A statistician plays darts，当时Ryan才读博士一年级，因为和室友玩飞镖的时候总是输，就想通过统计知识来给不同水平的玩家制定不同的掷飞镖策略，来maximize the expected score，而且这货还真的写了个[R包]来实现这个算法(<a href="https://cran.r-project.org/web/packages/darts/index.html)…方法很简单，你先瞄准靶心掷50次飞镖，把得分记下来，算法会帮你得出你的σ，也就是你瞄准水平的标准差，随后你这个水平的玩家该target的区域就会可以通过heatmap的形式给出来，该瞄准哪儿一目了然。不得不感慨统计学的真是魅力无穷让人无法抵挡……）" target="_blank" rel="external">https://cran.r-project.org/web/packages/darts/index.html)…方法很简单，你先瞄准靶心掷50次飞镖，把得分记下来，算法会帮你得出你的σ，也就是你瞄准水平的标准差，随后你这个水平的玩家该target的区域就会可以通过heatmap的形式给出来，该瞄准哪儿一目了然。不得不感慨统计学的真是魅力无穷让人无法抵挡……）</a></li>
+</ul>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/18/20160218/">
+                20160218
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-18
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li>Course: Building a Data Science Team(Finished)</li>
+<li>Continue with the genlasso algorithm paper</li>
+<li>Get Your Data Ready For Machine Learning in R with Pre-Processing</li>
+</ul>
+<blockquote>
+<p>It is important to prepare your data in such a way that it gives various different machine learning algorithms the best chance on your problem.</p>
+</blockquote>
+<h4 id="Data_pre-processing_with_caret_in_R">Data pre-processing with caret in R</h4><p>Transforms can be used in two ways</p>
+<ul>
+<li>standalone: preProcess() function, and applied to a dataset using the predict() function 从训练集中进行transform，应用于其他数据集</li>
+<li>training: preProcess() 在模型评价时自动应用，preProcess之后pass to the train() function</li>
+</ul>
+<p>the preprocessing function will skip over non-numeric data without error</p>
+<p>Below is a quick summary of all of the transform methods supported in the method argument of the preProcess() function in caret.</p>
+<ul>
+<li>“BoxCox“: apply a Box–Cox transform, values must be non-zero and positive.</li>
+<li>“YeoJohnson“: apply a Yeo-Johnson transform, like a BoxCox, but values can be negative.</li>
+<li>“expoTrans“: apply a power transform like BoxCox and YeoJohnson.</li>
+<li>“zv“: remove attributes with a zero variance (all the same value).</li>
+<li>“nzv“: remove attributes with a near zero variance (close to the same value).</li>
+<li>“center“: divide values by standard deviation.</li>
+<li>“scale“: subtract mean from values.</li>
+<li>“range“: normalize values.</li>
+<li>“pca“: transform data to the principal components.</li>
+<li>“ica“: transform data to the independent components.</li>
+<li>“spatialSign“: project data onto a unit circle.</li>
+</ul>
+<hr>
+<p>好久不玩bobbi，已经生疏了，整个人都软绵绵的。<br>腰酸腿疼一整天，还是出去跑几圈吧。</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2016/02/18/20160217/">
                 20160217
               </a>
@@ -656,124 +811,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/13/20150913/">
-                20150913
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-13
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>去西单逛街，把老妈送去火车站，地铁人山人海终于平安回来。<br>准备开学。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/12/20150912/">
-                20150912
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-12
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>逛华联。<br>回宿舍放东西，吃面包。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -812,7 +849,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">102</span>
+              <span class="site-state-item-count">104</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
