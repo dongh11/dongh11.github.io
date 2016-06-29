@@ -117,6 +117,147 @@
           
           
             
+              <a class="post-title-link" href="/2016/02/21/20160221/">
+                20160221
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-21
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h4 id="From_智识分子">From 智识分子</h4><ul>
+<li>一个人阅历越来越多，慢慢变成熟，他的思想可能会更加右倾保守。</li>
+<li>最简单经济学的五个智慧<ul>
+<li>国家不是家庭：家庭讲感情，国家讲利益和效率</li>
+<li>没有免费的午餐，什么都要讲成本（边际效益）</li>
+<li>人会对激励做出反应（屏幕时间激励）</li>
+<li>市场是一种激励信号的传递方式</li>
+<li>结果可能出乎意料（the iron law 任何大型社会项目的任何效果评估的预期值等于0）</li>
+</ul>
+</li>
+</ul>
+<h3 id="Ruby_Basics">Ruby Basics</h3><p>3.times {puts “Hello World”}<br>Ruby looks like an elegant programming language indeed, even a number is a full-fledged object, and has methods corresponding to it</p>
+<p>puts: put string<br>p : prints out internal representation of an object (debug-style output)</p>
+<p>puts is a function that returns nil(nothing)</p>
+<p>Everything is evaluated</p>
+<p>Flow of control in Ruby</p>
+<h3 id="今日Research_任务完成情况">今日Research 任务完成情况</h3><p>（前提：采用的是四个邻居，其实采用八个邻居本质上并不会有什么不同）</p>
+<ol>
+<li>直接用最简单粗暴的方法，把高于总体最小值的部分都设成is_cluster =1，这样就可以避免人工选择threshold的问题，并把这个函数（procedure）完善，应用于wafer32这类有一个大cluster的例子上。</li>
+</ol>
+<p><strong>接下来需要做的</strong><br>——</p>
+<ol>
+<li>用这个方法在wafer21（有两个cluster）、wafer1（无cluster）上面，看看有没有什么特别的效果。</li>
+</ol>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/21/20160220/">
+                20160220
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-21
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h2 id="Day_for_Research">Day for Research</h2><p>是否可以用空间自相关性系数作为判断标准？<br>draw the solution path of the fused lasso on wafer 32<br>the 4-neighbor structure is different from the 8-neighbor structure<br>不管是哪种邻居结构，都可能会出现边上的四个点先出现的情况。因而这就需要后续处理：怎么定义cluster？这样大的是否是cluster？ 此外还需要尽量确保这种差异不会影响到我们对λ的选择上面。<br>看起来对于我们这种应用，cluster会被整体分出来，random defect会被单独分出来。<br>然而会出现的一种情况是：可能先是分出来了一些random defect，然后分出一个cluster，再然后又分出一些random defect。至少可以保证的是，只要是分出来的cluster，应该不会整体再分回去。因为<br>我们可以通过fused lasso阶段得到的信息包括：一共有几种不同的值（即每次分叉）、</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2016/02/21/20160219/">
                 20160219
               </a>
@@ -667,150 +808,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/10/20160210/">
-                20160210
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-10
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>Try to simulate the distribution of logarithm of measurement values on chips</li>
-<li>Statistical Learning Course</li>
-<li>Machine Learning for Data Science and Analytics Week2 Videos and Tasks</li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/07/2016/">
-                That is life
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-07
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>一年</p>
-<p>又一年</p>
-<p>新的一年</p>
-<p>普通的一年</p>
-<p>想抗争的一年</p>
-<p>无法逃避的一年</p>
-<p>认识新朋友的一年</p>
-<p>怀念青春时光的一年</p>
-<p>褪去迷茫且努力的一年</p>
-<p>觉知到妄想与无明的一年</p>
-<p>真心感谢这所有经历的一年</p>
-<p>静静看着自己不知所措的一年</p>
-<p>试着降服内心的波澜壮阔的一年</p>
-<p>露出软肋又马上装上盔甲的一年</p>
-<p>盔甲越来越脆弱但挺过去的一年</p>
-<hr>
-<p>生活就是这样，居然是这样也不过是这样。</p>
-<p>习惯于冥想，一呼一吸之间去窥见生命的本质。</p>
-<p>生老病死 怨憎会 爱别离 求不得 五阴炽盛   不可思议的简单与平凡。</p>
-<p>所以还是要拼命爱这世界，爱所有人。</p>
-<p>爱这平凡，爱这悄无声息与不留痕迹。</p>
-<p>爱这一年，以及今后的每一年。</p>
-<p>祝愿所有人平安喜乐，享受生命。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -849,7 +846,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">154</span>
+              <span class="site-state-item-count">156</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
