@@ -117,6 +117,161 @@
           
           
             
+              <a class="post-title-link" href="/2016/02/24/20160224/">
+                20160224
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-24
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h2 id="R_和_Ruby_的数据分析之旅">R 和 Ruby 的数据分析之旅</h2><h4 id="R_Part">R Part</h4><p>关于R的data frame：之前用data frame主要是简单机械，虽然理解其中的逻辑，但是往往代码会比较繁复，可读性差。</p>
+<ul>
+<li>多用<strong>with() 函数</strong>：dataframe$x[dataframe$x &gt; dataframe$y] 等价于 with(data frame, x[x&gt;y])</li>
+<li>合并数据框用merge，by=‘keyword’ 指定关键词来合并</li>
+</ul>
+<p>关于ggplot2的语法：<br>每个图层包括如下五个组成部分</p>
+<ul>
+<li>数据</li>
+<li>审美映射（aes）</li>
+<li>统计变换（stat）</li>
+<li>几何对象（geom） 即所要创建的图表的类型</li>
+<li>位置调节：对图层内的元素位置等进行微调，例如设置填充属性，防止图形重合进行的移动，将柱状图堆叠起来等。</li>
+</ul>
+<p>layer()函数有很多参数，就都对应于上述的语法要素：<br>layer(geom, eom_params, stat, stat_params, data, mapping , position)<br>大多数情况下，为了方便我们可以使用快捷方式，即直接以geom 或stat 开头，因为任何几何对象都有一个默认的统计变换，任何统计变换都有一个默认的几何对象。</p>
+<blockquote>
+<p>p &lt;- ggplot()<br>p &lt;- p+ geom_point()</p>
+</blockquote>
+<p>geom_point 就说明了geom=point，然后stat 是默认的，位置调节没有，只需要再给定数据和aes就可以完成一个图层的plot了。</p>
+<p>统计变换stat对数据进行操作，生成另一个数据集，并用新的数据及来绘图。<br>比如stat_bin 就会生成包含各区段观测样本数和密度值的数据集，进而再将这个数据集用于绘图。而且用了stat_bin这样的统计变换，就会默认采用直方图(geom_histogram)这种几何对象。</p>
+<p>position=‘jitter’ 是对图像进行调节，即若某个位置已经被另一个数据点占据，则所要画的点微微移动到附近的位置，以免重叠。</p>
+<h4 id="Practice">Practice</h4><p>Monte Carlo Simulation：模拟那些需要重复使用随机抽样的物理和数学系统。<br>模拟过程经常是迭代的，因为我们需要对模型进行改进，使其更好地表示系统。</p>
+<p>———</p>
+<h2 id="关于Ruby">关于Ruby</h2><p>Ruby 支持五种类型的变量。<br>一般小写字母、下划线开头：变量（Variable）。<br>$开头：全局变量（Global variable）。<br>@开头：实例变量（Instance variable）。<br>@@开头：类变量（Class variable）类变量被共享在整个继承链中，且必须初始化后才能在方法定义中使用。<br>大写字母开头：常数（Constant）。</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/24/20160223/">
+                20160223
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-24
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li>have lunch with big tree Liu</li>
+<li>Finish the first week’s hw of Data Ethics</li>
+</ul>
+<h2 id="Ruby_arrays">Ruby arrays</h2><p>collection of object references<br>indexed using [] operator(method)<br><strong>Heterogeneous</strong> types allowed in the same array<br>can use %w{str1 str2} for string array creation</p>
+<p>Array 是Enumerable 模块的一个继承</p>
+<p>Hash 可以被视为字典或映射，可以索引一组对象，用大括号或Hash类来定义，用方括号索引。</p>
+<p>Ranges used to express natural consecutive sequences</p>
+<ul>
+<li>1..20, ‘a’//‘z’</li>
+<li>Two dots: all inclusive</li>
+<li>Three dots: end-exclusive</li>
+</ul>
+<p>ranges are easy to create, and very efficient</p>
+<p>hashes and blocks<br>Hash can be created with either {} or Hash.new</p>
+<p>The order of putting things into Hash maintained<br>If using symbols as keys— can use symbol:syntax</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2016/02/22/20160222/">
                 20160222
               </a>
@@ -665,142 +820,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/15/20160214/">
-                20160214
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-15
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>Stat Learning chapter 6 finished, 2 sections of  chapter 7 </li>
-<li>Combining the Strengths of MLlib, scikit-learn, and R(Slides)</li>
-<li>Statistical Modeling: The Two Cultures(Paper) by Leo Breiman</li>
-</ul>
-<p>Leo Breiman argued that the focus in the statistical community on data models has: </p>
-<ul>
-<li>Led to irrelevant theory and questionable scientific conclusions;</li>
-<li>Kept statisticians from using more suitable algorithmic models;</li>
-<li>Prevented statisticians from working on exciting new problems.</li>
-</ul>
-<hr>
-<p>Received the best gift ever for   Valentine’s Day: Confidence and Hope for the current moment and all the future days as well as great freedom and infinite variation of possibilities. </p>
-<p>What’s more fortunate: I am REALLY PASSIONATE on what I am doing, and I have found the meaning of my entire life. No more fear, anxiety about future, filling with peace and love. </p>
-<p>Pray for the world, for all folks who made me who I am.</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/13/20160213/">
-                20160213
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-13
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="How_to_compare_different_models?">How to compare different models?</h3><p>Since a logistic regression mode is used here, no $R^2$ can be calculated. Criteria like AIC or BIC requires the number of features used for the regression, cross validation is a more CS-style method.</p>
-<p>Another problem rises that the confusion matrix could only show the prediction accuracy under one specific threshold, e.g. 0.5. This may be a insufficient criterion for estimating logistic regression models.</p>
-<h3 id="How_to_choose_an_appropriate_lambda?">How to choose an appropriate lambda?</h3><p>Cross validation provides a simple way to tackle this problem. We get the cross-validation curve as a function of lambda.</p>
-<hr>
-<p>惜福、习劳、持戒、自尊。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -839,7 +858,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">337</span>
+              <span class="site-state-item-count">339</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
