@@ -117,6 +117,69 @@
           
           
             
+              <a class="post-title-link" href="/2016/03/07/20160305/">
+                20160305
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-03-07
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>我有一壶酒，但我不喝。</p>
+<ul>
+<li>Finish my first Ruby course</li>
+<li>看完了《前世今生》</li>
+</ul>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2016/03/04/20160304/">
                 20160304
               </a>
@@ -692,87 +755,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/24/20160224/">
-                20160224
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-24
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2 id="R_和_Ruby_的数据分析之旅">R 和 Ruby 的数据分析之旅</h2><h4 id="R_Part">R Part</h4><p>关于R的data frame：之前用data frame主要是简单机械，虽然理解其中的逻辑，但是往往代码会比较繁复，可读性差。</p>
-<ul>
-<li>多用<strong>with() 函数</strong>：dataframe$x[dataframe$x &gt; dataframe$y] 等价于 with(data frame, x[x&gt;y])</li>
-<li>合并数据框用merge，by=‘keyword’ 指定关键词来合并</li>
-</ul>
-<p>关于ggplot2的语法：<br>每个图层包括如下五个组成部分</p>
-<ul>
-<li>数据</li>
-<li>审美映射（aes）</li>
-<li>统计变换（stat）</li>
-<li>几何对象（geom） 即所要创建的图表的类型</li>
-<li>位置调节：对图层内的元素位置等进行微调，例如设置填充属性，防止图形重合进行的移动，将柱状图堆叠起来等。</li>
-</ul>
-<p>layer()函数有很多参数，就都对应于上述的语法要素：<br>layer(geom, eom_params, stat, stat_params, data, mapping , position)<br>大多数情况下，为了方便我们可以使用快捷方式，即直接以geom 或stat 开头，因为任何几何对象都有一个默认的统计变换，任何统计变换都有一个默认的几何对象。</p>
-<blockquote>
-<p>p &lt;- ggplot()<br>p &lt;- p+ geom_point()</p>
-</blockquote>
-<p>geom_point 就说明了geom=point，然后stat 是默认的，位置调节没有，只需要再给定数据和aes就可以完成一个图层的plot了。</p>
-<p>统计变换stat对数据进行操作，生成另一个数据集，并用新的数据及来绘图。<br>比如stat_bin 就会生成包含各区段观测样本数和密度值的数据集，进而再将这个数据集用于绘图。而且用了stat_bin这样的统计变换，就会默认采用直方图(geom_histogram)这种几何对象。</p>
-<p>position=‘jitter’ 是对图像进行调节，即若某个位置已经被另一个数据点占据，则所要画的点微微移动到附近的位置，以免重叠。</p>
-<h4 id="Practice">Practice</h4><p>Monte Carlo Simulation：模拟那些需要重复使用随机抽样的物理和数学系统。<br>模拟过程经常是迭代的，因为我们需要对模型进行改进，使其更好地表示系统。</p>
-<p>———</p>
-<h2 id="关于Ruby">关于Ruby</h2><p>Ruby 支持五种类型的变量。<br>一般小写字母、下划线开头：变量（Variable）。<br>$开头：全局变量（Global variable）。<br>@开头：实例变量（Instance variable）。<br>@@开头：类变量（Class variable）类变量被共享在整个继承链中，且必须初始化后才能在方法定义中使用。<br>大写字母开头：常数（Constant）。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -811,7 +793,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">618</span>
+              <span class="site-state-item-count">619</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -927,35 +909,5 @@
   
   
 
-<!-- mathjax config similar to math.stackexchange -->
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 </body>
 </html>
