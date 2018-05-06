@@ -117,6 +117,493 @@
           
           
             
+              <a class="post-title-link" href="/2016/02/21/20160220/">
+                20160220
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-21
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h2 id="Day_for_Research">Day for Research</h2><p>是否可以用空间自相关性系数作为判断标准？<br>draw the solution path of the fused lasso on wafer 32<br>the 4-neighbor structure is different from the 8-neighbor structure<br>不管是哪种邻居结构，都可能会出现边上的四个点先出现的情况。因而这就需要后续处理：怎么定义cluster？这样大的是否是cluster？ 此外还需要尽量确保这种差异不会影响到我们对λ的选择上面。<br>看起来对于我们这种应用，cluster会被整体分出来，random defect会被单独分出来。<br>然而会出现的一种情况是：可能先是分出来了一些random defect，然后分出一个cluster，再然后又分出一些random defect。至少可以保证的是，只要是分出来的cluster，应该不会整体再分回去。因为<br>我们可以通过fused lasso阶段得到的信息包括：一共有几种不同的值（即每次分叉）、</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/21/20160219/">
+                20160219
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-21
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li>Boosting 25 years by Zhihua Zhou(slides)<ul>
+<li>training instances that are wrongly predicted by Learner1 will play more important roles in the training of Learner2</li>
+<li>Why AdaBoost high impact? simple yet effective, generates the Boosting Family of algorithms, and there are sound theoretical results</li>
+<li>AdaBoost often does not overfit in real practice because of margin</li>
+</ul>
+</li>
+<li>Don’t try for the triple 20 — where to aim if yo are bad at darts （Ryan Tibshirani果然是名门之后，老爸Rob Tibshirani也就是lasso在统计领域的推广者之一在大S统计系任教，他就在大S统计系读的博士，玩个掷飞镖都能玩出一篇RSS来，这篇2011年发表的文章叫A statistician plays darts，当时Ryan才读博士一年级，因为和室友玩飞镖的时候总是输，就想通过统计知识来给不同水平的玩家制定不同的掷飞镖策略，来maximize the expected score，而且这货还真的写了个[R包]来实现这个算法(<a href="https://cran.r-project.org/web/packages/darts/index.html)…方法很简单，你先瞄准靶心掷50次飞镖，把得分记下来，算法会帮你得出你的σ，也就是你瞄准水平的标准差，随后你这个水平的玩家该target的区域就会可以通过heatmap的形式给出来，该瞄准哪儿一目了然。不得不感慨统计学的真是魅力无穷让人无法抵挡……）" target="_blank" rel="external">https://cran.r-project.org/web/packages/darts/index.html)…方法很简单，你先瞄准靶心掷50次飞镖，把得分记下来，算法会帮你得出你的σ，也就是你瞄准水平的标准差，随后你这个水平的玩家该target的区域就会可以通过heatmap的形式给出来，该瞄准哪儿一目了然。不得不感慨统计学的真是魅力无穷让人无法抵挡……）</a></li>
+</ul>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/18/20160218/">
+                20160218
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-18
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li>Course: Building a Data Science Team(Finished)</li>
+<li>Continue with the genlasso algorithm paper</li>
+<li>Get Your Data Ready For Machine Learning in R with Pre-Processing</li>
+</ul>
+<blockquote>
+<p>It is important to prepare your data in such a way that it gives various different machine learning algorithms the best chance on your problem.</p>
+</blockquote>
+<h4 id="Data_pre-processing_with_caret_in_R">Data pre-processing with caret in R</h4><p>Transforms can be used in two ways</p>
+<ul>
+<li>standalone: preProcess() function, and applied to a dataset using the predict() function 从训练集中进行transform，应用于其他数据集</li>
+<li>training: preProcess() 在模型评价时自动应用，preProcess之后pass to the train() function</li>
+</ul>
+<p>the preprocessing function will skip over non-numeric data without error</p>
+<p>Below is a quick summary of all of the transform methods supported in the method argument of the preProcess() function in caret.</p>
+<ul>
+<li>“BoxCox“: apply a Box–Cox transform, values must be non-zero and positive.</li>
+<li>“YeoJohnson“: apply a Yeo-Johnson transform, like a BoxCox, but values can be negative.</li>
+<li>“expoTrans“: apply a power transform like BoxCox and YeoJohnson.</li>
+<li>“zv“: remove attributes with a zero variance (all the same value).</li>
+<li>“nzv“: remove attributes with a near zero variance (close to the same value).</li>
+<li>“center“: divide values by standard deviation.</li>
+<li>“scale“: subtract mean from values.</li>
+<li>“range“: normalize values.</li>
+<li>“pca“: transform data to the principal components.</li>
+<li>“ica“: transform data to the independent components.</li>
+<li>“spatialSign“: project data onto a unit circle.</li>
+</ul>
+<hr>
+<p>好久不玩bobbi，已经生疏了，整个人都软绵绵的。<br>腰酸腿疼一整天，还是出去跑几圈吧。</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/18/20160217/">
+                20160217
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-18
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li>Read the paper of genlasso path algorithm (to be continued tomorrow)</li>
+<li>Chapter 7 of Stat Learning(have not finished yet)</li>
+<li>A Crash Course in Data Science — finished</li>
+<li>Building a Data Science Team — First part</li>
+<li>Ruby on Rails: An Introduction — finish the first week’s stuff</li>
+</ul>
+<hr>
+<p>明天要注册了，新的一学期又开始了。今天园子里面满满的都是春天的味道，实验室一日游轻松又愉快，试着跑跑步才发现自己已经虚到家了。</p>
+<h3 id="新学期计划">新学期计划</h3><ol>
+<li>九门功课同步学，至少三个A</li>
+<li>解决掉λ与cluster的优化问题，first paper accepted by the end of this semester</li>
+<li>秋季学期开学前看完ESL、HOPR、LASSO、AMYM这四本书</li>
+<li>复习qualify exam</li>
+<li>有时间精力的话申请summer intern</li>
+<li>坚持锻炼，把吃松了的肉练紧</li>
+</ol>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/17/20160216/">
+                20160216
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-17
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>A sleepy day on the train.</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/15/20160215/">
+                20160215
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-15
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>Larry Wasserman： Rise of the Machines</p>
+<blockquote>
+<p>During my twenty-five year career I have seen Machine Learning evolve from being a collection of rather primitive (yet clever) set of methods to do classifi- cation, to a sophisticated science that is rich in theory and applications.</p>
+<p>To avoid becoming irrelevant, we Statisticians need to (i) stay current on research areas in ML and (ii) change our outdated model for disseminating knowledge and (iii) revamp our graduate programs.</p>
+</blockquote>
+<p>Larry mentioned the competence of statisticians and machine learning researchers. The conference culture of ML gives pressure on researchers and pushes this field to move forward faster than the traditional statistics field.</p>
+<p>He has worked with association to ML on the following topics: <strong>statistical topology, graphical models, semisupervised inference, conformal prediction, and differential privacy</strong>.</p>
+<p>There are a number of topics that are routinely covered in ML that we rarely teach in Statistics. Examples are: <strong>Vapnik-Chervonenkis theory, concentration of measure, random matrices, convex optimization, graphical models, reproducing kernel Hilbert spaces, support vector machines, and sequential game theory</strong>. It is time to get rid of antiques like UMVUE, complete statistics and so on and teach modern ideas.</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/15/20160214/">
+                20160214
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-15
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li>Stat Learning chapter 6 finished, 2 sections of  chapter 7 </li>
+<li>Combining the Strengths of MLlib, scikit-learn, and R(Slides)</li>
+<li>Statistical Modeling: The Two Cultures(Paper) by Leo Breiman</li>
+</ul>
+<p>Leo Breiman argued that the focus in the statistical community on data models has: </p>
+<ul>
+<li>Led to irrelevant theory and questionable scientific conclusions;</li>
+<li>Kept statisticians from using more suitable algorithmic models;</li>
+<li>Prevented statisticians from working on exciting new problems.</li>
+</ul>
+<hr>
+<p>Received the best gift ever for   Valentine’s Day: Confidence and Hope for the current moment and all the future days as well as great freedom and infinite variation of possibilities. </p>
+<p>What’s more fortunate: I am REALLY PASSIONATE on what I am doing, and I have found the meaning of my entire life. No more fear, anxiety about future, filling with peace and love. </p>
+<p>Pray for the world, for all folks who made me who I am.</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2016/02/13/20160213/">
                 20160213
               </a>
@@ -302,489 +789,11 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/07/2016/">
-                That is life
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-07
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>一年</p>
-<p>又一年</p>
-<p>新的一年</p>
-<p>普通的一年</p>
-<p>想抗争的一年</p>
-<p>无法逃避的一年</p>
-<p>认识新朋友的一年</p>
-<p>怀念青春时光的一年</p>
-<p>褪去迷茫且努力的一年</p>
-<p>觉知到妄想与无明的一年</p>
-<p>真心感谢这所有经历的一年</p>
-<p>静静看着自己不知所措的一年</p>
-<p>试着降服内心的波澜壮阔的一年</p>
-<p>露出软肋又马上装上盔甲的一年</p>
-<p>盔甲越来越脆弱但挺过去的一年</p>
-<hr>
-<p>生活就是这样，居然是这样也不过是这样。</p>
-<p>习惯于冥想，一呼一吸之间去窥见生命的本质。</p>
-<p>生老病死 怨憎会 爱别离 求不得 五阴炽盛   不可思议的简单与平凡。</p>
-<p>所以还是要拼命爱这世界，爱所有人。</p>
-<p>爱这平凡，爱这悄无声息与不留痕迹。</p>
-<p>爱这一年，以及今后的每一年。</p>
-<p>祝愿所有人平安喜乐，享受生命。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/13/20150913/">
-                20150913
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-13
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>去西单逛街，把老妈送去火车站，地铁人山人海终于平安回来。<br>准备开学。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/12/20150912/">
-                20150912
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-12
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>逛华联。<br>回宿舍放东西，吃面包。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/11/20150911/">
-                20150911
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-11
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>下雨，在读研究生交流活动，接老妈，聊天。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/09/20150909/">
-                20150909
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-09
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2 id="Head_First_Python">Head First Python</h2><h3 id="列表">列表</h3><ul>
-<li>不需要为列表声明类型信息</li>
-<li>列表的存储类似于数组（数据项自下而上堆放形成一个堆栈）</li>
-<li>可以用中括号offset的办法访问数据项，如print(movies[0])</li>
-<li>列表是完备的Python集合对象，因而可以通过列表方法使用一些现成的功能<ul>
-<li>sth.append(sth) [在list中添加单个元素，括号中为单个元素]</li>
-<li>sth.pop()  [把最上方的元素弹出来]</li>
-<li>sth.extend() [在list后面附上另一个list，括号中为一个list的形式]</li>
-<li>sth.remove(sth) [在list中找到并删除一个特定的数据项，括号中为单个元素]</li>
-<li>sth.insert(0, sth) [在list的0位置<strong>前面</strong>增加一个数据项]</li>
-</ul>
-</li>
-<li>list 中可以包含混合类型的数据</li>
-</ul>
-<hr>
-<h3 id="迭代">迭代</h3><p>for each_flick in fav_movies:<br>  print(each_flick)</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/08/20150908/">
-                20150908
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-08
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>学术写作： <ul>
-<li>化繁就简，一定要反复精简语句</li>
-<li>要将被动句转化为主动句（很多著名的paper都用过 I 和 we）<ul>
-<li>可以用被动句的情况：Method 部分！ 原因<ul>
-<li>What was done is more important than who did it</li>
-<li>Readers tend to skim the methods section for key words rather than reading it as prose</li>
-<li>May be more effort than it’s worth to avoid using “we” and “I” in every sentence.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Writing with verbs<ul>
-<li>Use strong verbs! (少用 to be verbs，选择正确生动的动词）</li>
-<li>avoid turning verbs into nouns</li>
-<li>don’t bury the main verb</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/07/20150907/">
-                20150907
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-07
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>看zealer对坚果手机的评测</li>
-<li>看phd grind（终于读完了，很多感受，需要时时回顾，全部经验在文章末尾有一个总结）</li>
-<li>午睡2小时</li>
-<li>选课（好麻烦）</li>
-<li>在宿舍心有点没静下来</li>
-<li>看凯波的文章：A Spatial Variable Selection Method for Monitoring Product</li>
-<li>水了将近1小时的微博 😱</li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
   <div class="pagination">
-    <a class="extend prev" rel="prev" href="/page/81/">&laquo;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/81/">81</a><span class="page-number current">82</span><a class="page-number" href="/page/83/">83</a><a class="extend next" rel="next" href="/page/83/">&raquo;</a>
+    <a class="extend prev" rel="prev" href="/page/81/">&laquo;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/81/">81</a><span class="page-number current">82</span><a class="page-number" href="/page/83/">83</a><a class="page-number" href="/page/84/">84</a><a class="extend next" rel="next" href="/page/83/">&raquo;</a>
   </div>
 
 
@@ -818,7 +827,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">828</span>
+              <span class="site-state-item-count">835</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
