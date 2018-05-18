@@ -117,8 +117,8 @@
           
           
             
-              <a class="post-title-link" href="/2016/02/21/20160220/">
-                20160220
+              <a class="post-title-link" href="/2016/03/02/20160302/">
+                20160302
               </a>
             
           
@@ -127,66 +127,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2016-02-21
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2 id="Day_for_Research">Day for Research</h2><p>是否可以用空间自相关性系数作为判断标准？<br>draw the solution path of the fused lasso on wafer 32<br>the 4-neighbor structure is different from the 8-neighbor structure<br>不管是哪种邻居结构，都可能会出现边上的四个点先出现的情况。因而这就需要后续处理：怎么定义cluster？这样大的是否是cluster？ 此外还需要尽量确保这种差异不会影响到我们对λ的选择上面。<br>看起来对于我们这种应用，cluster会被整体分出来，random defect会被单独分出来。<br>然而会出现的一种情况是：可能先是分出来了一些random defect，然后分出一个cluster，再然后又分出一些random defect。至少可以保证的是，只要是分出来的cluster，应该不会整体再分回去。因为<br>我们可以通过fused lasso阶段得到的信息包括：一共有几种不同的值（即每次分叉）、</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/21/20160219/">
-                20160219
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-21
+          发表于 2016-03-02
         </span>
 
         
@@ -205,508 +146,19 @@
       
         
           <ul>
-<li>Boosting 25 years by Zhihua Zhou(slides)<ul>
-<li>training instances that are wrongly predicted by Learner1 will play more important roles in the training of Learner2</li>
-<li>Why AdaBoost high impact? simple yet effective, generates the Boosting Family of algorithms, and there are sound theoretical results</li>
-<li>AdaBoost often does not overfit in real practice because of margin</li>
+<li>Finish the edX course “Machine Learning for Data Science and Analytics”</li>
+<li>Ruby Week 3 finish 4/5</li>
+<li>“Are ML and Statistics Complementary?”</li>
 </ul>
-</li>
-<li>Don’t try for the triple 20 — where to aim if yo are bad at darts （Ryan Tibshirani果然是名门之后，老爸Rob Tibshirani也就是lasso在统计领域的推广者之一在大S统计系任教，他就在大S统计系读的博士，玩个掷飞镖都能玩出一篇RSS来，这篇2011年发表的文章叫A statistician plays darts，当时Ryan才读博士一年级，因为和室友玩飞镖的时候总是输，就想通过统计知识来给不同水平的玩家制定不同的掷飞镖策略，来maximize the expected score，而且这货还真的写了个[R包]来实现这个算法(<a href="https://cran.r-project.org/web/packages/darts/index.html)…方法很简单，你先瞄准靶心掷50次飞镖，把得分记下来，算法会帮你得出你的σ，也就是你瞄准水平的标准差，随后你这个水平的玩家该target的区域就会可以通过heatmap的形式给出来，该瞄准哪儿一目了然。不得不感慨统计学的真是魅力无穷让人无法抵挡……）" target="_blank" rel="external">https://cran.r-project.org/web/packages/darts/index.html)…方法很简单，你先瞄准靶心掷50次飞镖，把得分记下来，算法会帮你得出你的σ，也就是你瞄准水平的标准差，随后你这个水平的玩家该target的区域就会可以通过heatmap的形式给出来，该瞄准哪儿一目了然。不得不感慨统计学的真是魅力无穷让人无法抵挡……）</a></li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/18/20160218/">
-                20160218
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-18
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>Course: Building a Data Science Team(Finished)</li>
-<li>Continue with the genlasso algorithm paper</li>
-<li>Get Your Data Ready For Machine Learning in R with Pre-Processing</li>
-</ul>
-<blockquote>
-<p>It is important to prepare your data in such a way that it gives various different machine learning algorithms the best chance on your problem.</p>
-</blockquote>
-<h4 id="Data_pre-processing_with_caret_in_R">Data pre-processing with caret in R</h4><p>Transforms can be used in two ways</p>
-<ul>
-<li>standalone: preProcess() function, and applied to a dataset using the predict() function 从训练集中进行transform，应用于其他数据集</li>
-<li>training: preProcess() 在模型评价时自动应用，preProcess之后pass to the train() function</li>
-</ul>
-<p>the preprocessing function will skip over non-numeric data without error</p>
-<p>Below is a quick summary of all of the transform methods supported in the method argument of the preProcess() function in caret.</p>
-<ul>
-<li>“BoxCox“: apply a Box–Cox transform, values must be non-zero and positive.</li>
-<li>“YeoJohnson“: apply a Yeo-Johnson transform, like a BoxCox, but values can be negative.</li>
-<li>“expoTrans“: apply a power transform like BoxCox and YeoJohnson.</li>
-<li>“zv“: remove attributes with a zero variance (all the same value).</li>
-<li>“nzv“: remove attributes with a near zero variance (close to the same value).</li>
-<li>“center“: divide values by standard deviation.</li>
-<li>“scale“: subtract mean from values.</li>
-<li>“range“: normalize values.</li>
-<li>“pca“: transform data to the principal components.</li>
-<li>“ica“: transform data to the independent components.</li>
-<li>“spatialSign“: project data onto a unit circle.</li>
-</ul>
-<hr>
-<p>好久不玩bobbi，已经生疏了，整个人都软绵绵的。<br>腰酸腿疼一整天，还是出去跑几圈吧。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/18/20160217/">
-                20160217
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-18
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>Read the paper of genlasso path algorithm (to be continued tomorrow)</li>
-<li>Chapter 7 of Stat Learning(have not finished yet)</li>
-<li>A Crash Course in Data Science — finished</li>
-<li>Building a Data Science Team — First part</li>
-<li>Ruby on Rails: An Introduction — finish the first week’s stuff</li>
-</ul>
-<hr>
-<p>明天要注册了，新的一学期又开始了。今天园子里面满满的都是春天的味道，实验室一日游轻松又愉快，试着跑跑步才发现自己已经虚到家了。</p>
-<h3 id="新学期计划">新学期计划</h3><ol>
-<li>九门功课同步学，至少三个A</li>
-<li>解决掉λ与cluster的优化问题，first paper accepted by the end of this semester</li>
-<li>秋季学期开学前看完ESL、HOPR、LASSO、AMYM这四本书</li>
-<li>复习qualify exam</li>
-<li>有时间精力的话申请summer intern</li>
-<li>坚持锻炼，把吃松了的肉练紧</li>
-</ol>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/17/20160216/">
-                20160216
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-17
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>A sleepy day on the train.</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/15/20160215/">
-                20160215
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-15
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>Larry Wasserman： Rise of the Machines</p>
-<blockquote>
-<p>During my twenty-five year career I have seen Machine Learning evolve from being a collection of rather primitive (yet clever) set of methods to do classifi- cation, to a sophisticated science that is rich in theory and applications.</p>
-<p>To avoid becoming irrelevant, we Statisticians need to (i) stay current on research areas in ML and (ii) change our outdated model for disseminating knowledge and (iii) revamp our graduate programs.</p>
-</blockquote>
-<p>Larry mentioned the competence of statisticians and machine learning researchers. The conference culture of ML gives pressure on researchers and pushes this field to move forward faster than the traditional statistics field.</p>
-<p>He has worked with association to ML on the following topics: <strong>statistical topology, graphical models, semisupervised inference, conformal prediction, and differential privacy</strong>.</p>
-<p>There are a number of topics that are routinely covered in ML that we rarely teach in Statistics. Examples are: <strong>Vapnik-Chervonenkis theory, concentration of measure, random matrices, convex optimization, graphical models, reproducing kernel Hilbert spaces, support vector machines, and sequential game theory</strong>. It is time to get rid of antiques like UMVUE, complete statistics and so on and teach modern ideas.</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/15/20160214/">
-                20160214
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-15
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>Stat Learning chapter 6 finished, 2 sections of  chapter 7 </li>
-<li>Combining the Strengths of MLlib, scikit-learn, and R(Slides)</li>
-<li>Statistical Modeling: The Two Cultures(Paper) by Leo Breiman</li>
-</ul>
-<p>Leo Breiman argued that the focus in the statistical community on data models has: </p>
-<ul>
-<li>Led to irrelevant theory and questionable scientific conclusions;</li>
-<li>Kept statisticians from using more suitable algorithmic models;</li>
-<li>Prevented statisticians from working on exciting new problems.</li>
-</ul>
-<hr>
-<p>Received the best gift ever for   Valentine’s Day: Confidence and Hope for the current moment and all the future days as well as great freedom and infinite variation of possibilities. </p>
-<p>What’s more fortunate: I am REALLY PASSIONATE on what I am doing, and I have found the meaning of my entire life. No more fear, anxiety about future, filling with peace and love. </p>
-<p>Pray for the world, for all folks who made me who I am.</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/13/20160213/">
-                20160213
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-13
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h3 id="How_to_compare_different_models?">How to compare different models?</h3><p>Since a logistic regression mode is used here, no $R^2$ can be calculated. Criteria like AIC or BIC requires the number of features used for the regression, cross validation is a more CS-style method.</p>
-<p>Another problem rises that the confusion matrix could only show the prediction accuracy under one specific threshold, e.g. 0.5. This may be a insufficient criterion for estimating logistic regression models.</p>
-<h3 id="How_to_choose_an_appropriate_lambda?">How to choose an appropriate lambda?</h3><p>Cross validation provides a simple way to tackle this problem. We get the cross-validation curve as a function of lambda.</p>
-<hr>
-<p>惜福、习劳、持戒、自尊。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2016/02/12/20160211/">
-                20160211
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2016-02-12
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li>Statistical Learning Chapter 6</li>
-</ul>
-<hr>
-<h3 id="Research_related">Research related</h3><p>To test the accuracy of our method, we consider the following cases:</p>
+<p>Deep learning’s successes can be explained by three factors:</p>
 <ol>
-<li>There is one big cluster of failed chips(in several sorts of shapes), and no random defects exists.</li>
-<li>There is one big cluster of failed chips(in circle shape), and random defects exist in chips that are not in the defect cluster.</li>
-<li>There are several clusters of failed chips(all in circle shape or in different shapes) and no random defects exists.</li>
-<li>There are several clusters of failed chips(all in circle shape or in different shapes) and random defects exist in chips that are not in the defect cluster.</li>
+<li><p>Scaling up computation (e.g. by using GPUs).</p>
+</li>
+<li><p>Collecting and processing massive amounts of data.</p>
+</li>
+<li><p>Using models with massive amounts of parameters, even if they are unidentifiable and uninterpretable.</p>
+</li>
 </ol>
-<p>Try to generate simulated measurement values on chips: making the assumption that  nonclustered good chips  have measurement values sharing a common mean and random errors following <strong>normal distribution</strong>. </p>
 
         
       
@@ -737,8 +189,8 @@
           
           
             
-              <a class="post-title-link" href="/2016/02/10/20160210/">
-                20160210
+              <a class="post-title-link" href="/2016/03/02/20160301/">
+                20160301
               </a>
             
           
@@ -747,7 +199,472 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2016-02-10
+          发表于 2016-03-02
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h4 id="Data_Types_in_R">Data Types in R</h4><p>Data types include</p>
+<ul>
+<li>logical </li>
+<li>numeric</li>
+<li>integer</li>
+<li>complex</li>
+<li>character</li>
+<li>raw</li>
+</ul>
+<p>The simplest of these objects is the vector object and there are six data types of these atomic vectors, also termed as six classes of vectors. The other R-Objects are built upon the atomic vectors.</p>
+<ul>
+<li>vectors</li>
+<li>lists</li>
+<li>matrices</li>
+<li>arrays</li>
+<li>factors</li>
+<li>data frames</li>
+</ul>
+<hr>
+<p>就是抢到了小米5的首发</p>
+<p>就是这么屌丝</p>
+<p>晚上下课就是去和小青&amp;睿哥吃烤鱼了又怎样</p>
+<p>不服来咬我:-D</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/29/20160229/">
+                20160229
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-29
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>8:30 ~ 9:30 meeting</p>
+<p>等着11点抢小牛</p>
+<p>抢到了！</p>
+<p>中午和晓雨、阳仔、政龙去吃广东饭。:-D</p>
+<p>这一天小李子拿到了奥斯卡，被刷屏了。</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/29/20160228/">
+                20160228
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-29
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>《智识分子》中『人的正义思想是怎么来的』，有六个道德模块：<br>关爱/伤害；自由/压迫；公平/欺骗；忠诚/背叛；权威/颠覆；圣洁/堕落。<br>受不同文化影响，这六个模块都可能会不同，而且很有可能这六个模块的坐标是写在基因里的。</p>
+<p>看了Stat Learning的第九章（除了kernel的部分）</p>
+<p>准备第二天的meeting【误】</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/29/20160227/">
+                20160227
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-29
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>吃了很多水果的一天<br>自学Rails的一天</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/29/20160226/">
+                20160226
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-29
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>Ruby的作业、找教程把Ruby版本变成了2.2.3</p>
+<p>天气还是有点冷。</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/29/20160225/">
+                20160225
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-29
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>Finish the Ruby Homework</p>
+<p>Enjoy the Bayesian Statistics Course!</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/24/20160224/">
+                20160224
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-24
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <h2 id="R_和_Ruby_的数据分析之旅">R 和 Ruby 的数据分析之旅</h2><h4 id="R_Part">R Part</h4><p>关于R的data frame：之前用data frame主要是简单机械，虽然理解其中的逻辑，但是往往代码会比较繁复，可读性差。</p>
+<ul>
+<li>多用<strong>with() 函数</strong>：dataframe$x[dataframe$x &gt; dataframe$y] 等价于 with(data frame, x[x&gt;y])</li>
+<li>合并数据框用merge，by=‘keyword’ 指定关键词来合并</li>
+</ul>
+<p>关于ggplot2的语法：<br>每个图层包括如下五个组成部分</p>
+<ul>
+<li>数据</li>
+<li>审美映射（aes）</li>
+<li>统计变换（stat）</li>
+<li>几何对象（geom） 即所要创建的图表的类型</li>
+<li>位置调节：对图层内的元素位置等进行微调，例如设置填充属性，防止图形重合进行的移动，将柱状图堆叠起来等。</li>
+</ul>
+<p>layer()函数有很多参数，就都对应于上述的语法要素：<br>layer(geom, eom_params, stat, stat_params, data, mapping , position)<br>大多数情况下，为了方便我们可以使用快捷方式，即直接以geom 或stat 开头，因为任何几何对象都有一个默认的统计变换，任何统计变换都有一个默认的几何对象。</p>
+<blockquote>
+<p>p &lt;- ggplot()<br>p &lt;- p+ geom_point()</p>
+</blockquote>
+<p>geom_point 就说明了geom=point，然后stat 是默认的，位置调节没有，只需要再给定数据和aes就可以完成一个图层的plot了。</p>
+<p>统计变换stat对数据进行操作，生成另一个数据集，并用新的数据及来绘图。<br>比如stat_bin 就会生成包含各区段观测样本数和密度值的数据集，进而再将这个数据集用于绘图。而且用了stat_bin这样的统计变换，就会默认采用直方图(geom_histogram)这种几何对象。</p>
+<p>position=‘jitter’ 是对图像进行调节，即若某个位置已经被另一个数据点占据，则所要画的点微微移动到附近的位置，以免重叠。</p>
+<h4 id="Practice">Practice</h4><p>Monte Carlo Simulation：模拟那些需要重复使用随机抽样的物理和数学系统。<br>模拟过程经常是迭代的，因为我们需要对模型进行改进，使其更好地表示系统。</p>
+<p>———</p>
+<h2 id="关于Ruby">关于Ruby</h2><p>Ruby 支持五种类型的变量。<br>一般小写字母、下划线开头：变量（Variable）。<br>$开头：全局变量（Global variable）。<br>@开头：实例变量（Instance variable）。<br>@@开头：类变量（Class variable）类变量被共享在整个继承链中，且必须初始化后才能在方法定义中使用。<br>大写字母开头：常数（Constant）。</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/24/20160223/">
+                20160223
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-24
         </span>
 
         
@@ -766,10 +683,84 @@
       
         
           <ul>
-<li>Try to simulate the distribution of logarithm of measurement values on chips</li>
-<li>Statistical Learning Course</li>
-<li>Machine Learning for Data Science and Analytics Week2 Videos and Tasks</li>
+<li>have lunch with big tree Liu</li>
+<li>Finish the first week’s hw of Data Ethics</li>
 </ul>
+<h2 id="Ruby_arrays">Ruby arrays</h2><p>collection of object references<br>indexed using [] operator(method)<br><strong>Heterogeneous</strong> types allowed in the same array<br>can use %w{str1 str2} for string array creation</p>
+<p>Array 是Enumerable 模块的一个继承</p>
+<p>Hash 可以被视为字典或映射，可以索引一组对象，用大括号或Hash类来定义，用方括号索引。</p>
+<p>Ranges used to express natural consecutive sequences</p>
+<ul>
+<li>1..20, ‘a’//‘z’</li>
+<li>Two dots: all inclusive</li>
+<li>Three dots: end-exclusive</li>
+</ul>
+<p>ranges are easy to create, and very efficient</p>
+<p>hashes and blocks<br>Hash can be created with either {} or Hash.new</p>
+<p>The order of putting things into Hash maintained<br>If using symbols as keys— can use symbol:syntax</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2016/02/22/20160222/">
+                20160222
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-02-22
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>看了 “Machine Learning for Data Science and Analytics”的第四周课程</p>
+<p>介绍了关于training 与parameter、hyper parameter的关系</p>
+<p>“深度学习掀起的热潮也许大过它本身真正的贡献”</p>
+<p>————</p>
+<h4 id="about_Ruby">about Ruby</h4><p>Ruby is a dynamic language，不需要声明参数类型<br>return is optional<br>Symbols are unique and immutable<br>can be converted to a String with to_s, or from String to Symbol with to_sym</p>
 
         
       
@@ -793,7 +784,7 @@
 
   
   <div class="pagination">
-    <a class="extend prev" rel="prev" href="/page/81/">&laquo;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/81/">81</a><span class="page-number current">82</span><a class="page-number" href="/page/83/">83</a><a class="page-number" href="/page/84/">84</a><a class="extend next" rel="next" href="/page/83/">&raquo;</a>
+    <a class="extend prev" rel="prev" href="/page/81/">&laquo;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/81/">81</a><span class="page-number current">82</span><a class="page-number" href="/page/83/">83</a><span class="space">&hellip;</span><a class="page-number" href="/page/85/">85</a><a class="extend next" rel="next" href="/page/83/">&raquo;</a>
   </div>
 
 
@@ -827,7 +818,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">835</span>
+              <span class="site-state-item-count">846</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
